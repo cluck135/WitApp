@@ -99177,3 +99177,5 @@ const classes = [
     "instructionalMethodDescription": null
   },
 ]
+
+export default classes

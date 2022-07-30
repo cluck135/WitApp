@@ -1,8 +1,18 @@
 import Head from 'next/head'
 import Image from 'next/image'
 import styles from '../styles/Home.module.css'
+import classes from '../classes.ts'
 
 export default function Home() {
+
+  const classList = (classes) => {
+    for( let i = 0; i<classes.length-1; i++){
+      console.log(classes[i].subjectDescription)
+    }
+  }
+
+  classList(classes);
+
   return (
     <div className={styles.container}>
       <Head>
@@ -11,7 +21,7 @@ export default function Home() {
         <link rel="icon" href="/favicon.ico" />
       </Head>
       <main className='bg-slate-400 w-screen h-100'>
-        Hello
+        
       </main>
     </div>
   )
